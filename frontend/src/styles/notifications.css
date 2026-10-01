@@ -1,0 +1,308 @@
+/* =========================================
+   NOTIFICATIONS PAGE
+========================================= */
+
+.notifications-page {
+    min-height: calc(100vh - 64px);
+    padding: 35px 45px 50px;
+    background: #f5f7fb;
+}
+
+.notifications-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.notifications-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.notifications-label {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.notifications-header h1 {
+    margin: 0 0 8px;
+    font-size: 34px;
+    color: #111827;
+}
+
+.notifications-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.notifications-header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.notification-refresh-button,
+.notification-read-all-button,
+.notification-mark-read {
+    padding: 10px 15px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.notification-refresh-button {
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+}
+
+.notification-read-all-button {
+    border: none;
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.notification-refresh-button:hover {
+    background: #f3f4f6;
+}
+
+.notification-read-all-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ERROR */
+
+.notification-error {
+    margin-bottom: 20px;
+    padding: 13px 16px;
+    border-radius: 10px;
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+
+/* LIST */
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.notification-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+}
+
+.notification-unread {
+    border-left: 4px solid #2563eb;
+}
+
+.notification-read {
+    opacity: 0.72;
+}
+
+.notification-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: #fef3c7;
+    font-size: 20px;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-title-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.notification-title-row h3 {
+    margin: 0;
+    color: #111827;
+    font-size: 16px;
+}
+
+.unread-badge {
+    padding: 3px 7px;
+    border-radius: 20px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.notification-content p {
+    margin: 7px 0;
+    color: #4b5563;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.notification-date {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.notification-stock-info {
+    display: flex;
+    gap: 18px;
+    margin-top: 12px;
+    color: #4b5563;
+    font-size: 12px;
+}
+
+.notification-stock-info strong {
+    color: #111827;
+}
+
+.notification-mark-read {
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+}
+
+.notification-mark-read:hover {
+    background: #f3f4f6;
+}
+
+
+/* EMPTY */
+
+.notification-empty {
+    padding: 75px 20px;
+    text-align: center;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+
+.notification-empty-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.notification-empty h2 {
+    margin: 0 0 6px;
+    color: #111827;
+}
+
+.notification-empty p {
+    margin: 0;
+    color: #6b7280;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .notifications-page {
+    background: #0f172a;
+}
+
+body.dark-mode .notifications-header h1 {
+    color: #f8fafc;
+}
+
+body.dark-mode .notifications-header p {
+    color: #94a3b8;
+}
+
+body.dark-mode .notification-card,
+body.dark-mode .notification-empty {
+    background: #111827;
+    border-color: #1f2937;
+    box-shadow: none;
+}
+
+body.dark-mode .notification-title-row h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .notification-content p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .notification-stock-info {
+    color: #94a3b8;
+}
+
+body.dark-mode .notification-stock-info strong {
+    color: #f8fafc;
+}
+
+body.dark-mode .notification-refresh-button {
+    background: #111827;
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+body.dark-mode .notification-mark-read {
+    background: #111827;
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+body.dark-mode .notification-empty h2 {
+    color: #f8fafc;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .notifications-page {
+        padding: 25px 18px 40px;
+    }
+
+    .notifications-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .notifications-header-actions {
+        width: 100%;
+    }
+
+    .notification-refresh-button,
+    .notification-read-all-button {
+        flex: 1;
+    }
+
+    .notification-card {
+        flex-direction: column;
+    }
+
+    .notification-mark-read {
+        align-self: flex-start;
+    }
+
+    .notification-stock-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

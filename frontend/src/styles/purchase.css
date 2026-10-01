@@ -1,0 +1,295 @@
+/* =========================
+   PURCHASE PAGE
+========================= */
+
+.purchase-page {
+    min-height: 100vh;
+    padding: 30px;
+    background: #f4f6f8;
+}
+
+.purchase-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.purchase-header {
+    margin-bottom: 25px;
+}
+
+.purchase-header h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #1f2937;
+}
+
+.purchase-header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.purchase-form-card,
+.purchase-list-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.purchase-form-card h2,
+.purchase-list-card h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+
+/* =========================
+   BASIC FORM
+========================= */
+
+.purchase-basic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   PURCHASE ITEMS
+========================= */
+
+.purchase-items-section {
+    margin-top: 30px;
+}
+
+.purchase-items-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.purchase-items-header h3 {
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.purchase-items-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.purchase-items-table-wrapper table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.purchase-items-table-wrapper th,
+.purchase-items-table-wrapper td {
+    padding: 11px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+}
+
+.purchase-items-table-wrapper th {
+    background: #f8fafc;
+    color: #374151;
+    font-weight: 600;
+}
+
+.purchase-items-table-wrapper input,
+.purchase-items-table-wrapper select {
+    width: 100%;
+    min-width: 120px;
+    padding: 9px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 13px;
+    outline: none;
+    background: white;
+}
+
+.purchase-items-table-wrapper input:focus,
+.purchase-items-table-wrapper select:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   PURCHASE TOTAL
+========================= */
+
+.purchase-total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 18px;
+}
+
+.purchase-total strong {
+    font-size: 22px;
+    color: #111827;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.secondary-button {
+    padding: 11px 20px;
+    border: 1px solid #d1d5db;
+    background: #f3f4f6;
+    color: #374151;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.secondary-button:hover {
+    background: #e5e7eb;
+}
+
+.secondary-button:disabled,
+.delete-button:disabled,
+.primary-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-wrapper table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.table-wrapper th {
+    background: #f8fafc;
+    color: #374151;
+    font-weight: 600;
+}
+
+.table-wrapper tbody tr:hover {
+    background: #f9fafb;
+}
+
+
+/* =========================
+   LOADING / EMPTY
+========================= */
+
+.loading-text,
+.empty-text {
+    padding: 20px 0;
+    color: #6b7280;
+    text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .purchase-basic-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .purchase-page {
+        padding: 15px;
+    }
+
+    .purchase-basic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .purchase-form-card,
+    .purchase-list-card {
+        padding: 18px;
+    }
+
+    .purchase-header h1 {
+        font-size: 24px;
+    }
+
+    .purchase-items-header {
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+}

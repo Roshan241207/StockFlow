@@ -1,0 +1,140 @@
+.category-page {
+    min-height: 100vh;
+    padding: 35px;
+    background: #f4f6f8;
+}
+
+.category-header {
+    margin-bottom: 25px;
+}
+
+.category-header h1 {
+    margin: 0;
+    color: #1f2937;
+}
+
+.category-header p {
+    margin-top: 6px;
+    color: #6b7280;
+}
+
+.category-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px;
+}
+
+.category-card h2 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+.category-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.category-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.category-form input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.category-form input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.category-buttons {
+    grid-column: 1 / -1;
+}
+
+.save-button,
+.cancel-button,
+.edit-button,
+.delete-button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.save-button {
+    background: #2563eb;
+    color: white;
+}
+
+.save-button:hover {
+    background: #1d4ed8;
+}
+
+.cancel-button {
+    background: #6b7280;
+    color: white;
+    margin-left: 10px;
+}
+
+.edit-button {
+    background: #2563eb;
+    color: white;
+    margin-right: 8px;
+}
+
+.delete-button {
+    background: #dc2626;
+    color: white;
+}
+
+.category-error {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.category-success {
+    background: #dcfce7;
+    color: #166534;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.category-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.category-card th,
+.category-card td {
+    padding: 13px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+.category-card th {
+    background: #f9fafb;
+    color: #374151;
+}
+
+.no-data {
+    text-align: center !important;
+    color: #6b7280;
+}

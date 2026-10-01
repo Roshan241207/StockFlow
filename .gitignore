@@ -1,0 +1,62 @@
+# =========================================
+# REACT / VITE
+# =========================================
+
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# =========================================
+# SPRING BOOT / MAVEN
+# =========================================
+
+StockFlowAPI/target/
+StockFlowAPI/.env
+StockFlowAPI/.env.*
+
+# =========================================
+# SECRET CONFIGURATION
+# =========================================
+
+StockFlowAPI/src/main/resources/application.properties
+
+# =========================================
+# IDE
+# =========================================
+
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+
+# =========================================
+# LOGS
+# =========================================
+
+*.log
+logs/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================================
+# OS
+# =========================================
+
+.DS_Store
+Thumbs.db
+
+# =========================================
+# OTHER IDE FILES
+# =========================================
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

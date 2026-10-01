@@ -1,0 +1,147 @@
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f6f8;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 380px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #1f2937;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.auth-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.auth-card input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 45px;
+}
+
+.eye-button {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.eye-button:hover {
+    opacity: 0.7;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.primary-button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 22px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.success-message {
+    background: #dcfce7;
+    color: #166534;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.primary-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
